@@ -1,0 +1,164 @@
+.content {
+    width: 80%;
+    margin: 0 auto;
+    background: #248CD6;
+}
+
+.content-left {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    background: #35c748;
+    margin: 30px;
+}
+
+
+.top{
+    width: 100%;
+    display: inline-block;
+    background: #DBDBDB;
+}
+.avatar {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 5px auto;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.avatar img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.name {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.yes {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.open {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+.open a{
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    background: orange;
+    border-radius: 30px;
+}
+.open a:hover{
+    background: red;
+}
+.bottom{
+    width: 100%;
+    display: inline-block;
+    background: wheat;
+}
+
+.bottom ul li a {
+    display: inline-block;
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    margin: 10px 0 0 30px;
+    font-size: 20px;
+    color: black;
+
+
+}
+.bottom ul li a:hover{
+    color: red;
+}
+
+.content-right {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    background: #64676e;
+    margin: 30px 0 0 20px;
+}
+.early{
+    width: 90%;
+    margin: 0 auto;
+}
+.early h2{
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    display: inline-block;
+}.early button{
+     border: none;
+     /*outline: none;*/
+     color: #292929;
+     font-size: 12px;
+     font-weight: 600;
+     margin: 30px 0 0 0;
+     float: right;
+    padding: 5px 10px;
+}
+
+.record{
+    width: 100%;
+    display: inline-block;
+}
+.video {
+    width: 280px;
+    margin: 20px;
+    font-size: 16px;
+    color: black;
+    background: #DBDBDB;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.video video {
+    margin-left: 10px;
+
+}
+
+.video p {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+    display: inline-block;
+
+    margin: 5px 0;
+}
+.video p span{
+    width: 100px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 5px;
+    color: #6E6E6E;
+
+}

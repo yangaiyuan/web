@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的视频</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/video.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <a href="index.html">交互式学习录播器</a>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="course.html">课程中心</a></li>
+            <li><a href="personal.html">个人中心</a></li>
+            <li><a href="link.html" class="nr_last">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="输入关键词搜索" class="a">
+        <input type="submit" value="搜索" onclick=change() class="ab">
+    </div>
+    <div class="login">
+
+        <a href="register.html">注册</a>&nbsp;|&nbsp;<a href="login.html" >登录</a>
+
+    </div>
+</div>
+<div class="content">
+    <div class="content-left">
+        <ul>
+            <li><a href="video.html">我的视频</a></li>
+            <li><a href="test.html">考核测试题</a></li>
+            <li><a href="#">XXXX</a></li>
+            <li><a href="#">XXXX</a></li>
+            <li><a href="#">XXXX</a></li>
+            <li><a href="#">XXXX</a></li>
+            <li><a href="#">XXXX</a></li>
+            <li><a href="#">更多</a></li>
+        </ul>
+    </div>
+    <div class="content-right">
+        <video id="voide1" autoplay="autoplay" controls="controls">
+            <source src="video/yyy.mp4" type="video/mp4">
+            您的浏览器不支持 HTML5 video 标签。
+        </video>
+        <p>
+            <span>功能区：</span>
+            <button onclick="playPause()">播放/暂停</button>
+            <button onclick="recordQA()">录音提问</button>
+            <button onclick="textQA()">文本提问</button>
+            <button onclick="videoQA()">视频提问</button>
+            <button onclick="makeBig()">放大</button>
+            <button onclick="makeSmall()">缩小</button>
+            <button onclick="makeNormal()">普通</button>
+        </p>
+        <div id="light" class="white_content">
+            <form action="">
+                <h2>今天的天气如何？</h2>
+                <input type="text" placeholder="请输入答案">
+                <button onclick="Sure()" class="aaa">确定</button>
+                <button onclick="Close()" class="aaa">关闭</button>
+            </form>
+        </div>
+
+        <div id="fade" class="black_overlay">
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="copy">©AUI 京ICP备15006025号-1 <a href="index.html"><font color="#ffffff">编辑者：杨爱媛</font></a>
+        </div>
+        <div class="copy">
+            Copyright © 2019-2019 <span>地址：玉林师范学院东校区</span>
+        </div>
+    </div>
+</div>
+</body>
+</body>
+</html>
+<script type="text/javascript">
+    function change() {
+        alert("暂无此功能.");
+    }
+
+    function recordQA() {
+        alert("暂无此功能.");
+    }
+
+    function videoQA() {
+        alert("暂无此功能.");
+    }
+
+    var end_time = 0;
+    var myVideo = document.getElementById("voide1");
+
+    /* 播放暂停 */
+    function playPause() {
+        if (myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+    }
+
+    /* 文本问答*/
+    myVideo.addEventListener("play", function () {
+        setInterval(() => {
+            end_time = myVideo.currentTime;
+            //播放5秒弹出问题
+            if (end_time > 4 && end_time < 6) {
+                textQA();
+            }
+        }, 5000);
+    });
+
+    function textQA() {
+
+        document.getElementById('light').style.display = 'block';
+
+        document.getElementById('fade').style.display = 'block'
+
+    }
+    function Sure() {
+        document.getElementById('light').style.display = 'none';
+
+        document.getElementById('fade').style.display = 'none'
+    }
+
+    function Close() {
+        document.getElementById('light').style.display = 'none';
+
+        document.getElementById('fade').style.display = 'none'
+
+    }
+
+    /* 放大 */
+    function makeBig() {
+        myVideo.width = 900;
+
+    }
+
+    /* 缩小 */
+    function makeSmall() {
+        myVideo.width = 700;
+
+    }
+
+    /* 正常 */
+    function makeNormal() {
+        myVideo.width = 600;
+
+    }
+</script>

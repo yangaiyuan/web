@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="css/jquery.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <a href="index.html">交互式学习录播器</a>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="course.html">课程中心</a></li>
+            <li><a href="personal.html">个人中心</a></li>
+            <li><a href="link.html" class="nr_last">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="输入关键词搜索" class="a">
+        <input type="submit" value="搜索" onclick=change() class="ab">
+    </div>
+    <div class="login">
+
+        <a href="register.html">注册</a>&nbsp;|&nbsp;<a href="login.html" >登录</a>
+
+    </div>
+</div>
+<div class="content">
+    <div class="content-left">
+        <ul>
+            <li><a href="course.html">我的视频</a></li>
+            <li><a href="course.html">课程介绍</a></li>
+            <li><a href="course.html">师资力量</a></li>
+            <li><a href="course.html">名师讲解</a></li>
+            <li><a href="course.html">课程下载</a></li>
+            <li><a href="course.html">习题解析</a></li>
+            <li><a href="course.html">课后讨论</a></li>
+            <li><a href="course.html">更多</a></li>
+        </ul>
+    </div>
+    <div class="content-center">
+        <div class="banner">
+            <ul class="lunbo">
+                <li><a href=""><img src="img/1.jpg" alt=""></a></li>
+                <li><a href=""><img src="img/2.jpg" alt=""></a></li>
+                <li><a href=""><img src="img/3.jpg" alt=""></a></li>
+                <li><a href=""><img src="img/4.jpg" alt=""></a></li>
+                <li><a href=""><img src="img/5.jpg" alt=""></a></li>
+                <li><a href=""><img src="img/6.jpg" alt=""></a></li>
+                <li><a href=""><img src="img/7.jpg" alt=""></a></li>
+            </ul>
+            ../
+            <div class="btn"></div>
+            <script type="text/javascript">
+                var banner = $(".lunbo");
+                var lis = $(".lunbo li");
+                var btn = $(".btn");
+                var index = 0;
+                for (var i = 0; i < lis.length; i++) {
+                    var span = $("<span>");
+                    span.text(i + 1);
+                    btn.append(span);
+                }
+                var spans = $(".btn span");
+                spans.eq(index).addClass("cur");
+
+                function run() {
+                    if (index == lis.length) {
+                        index = 0;
+                    }
+                    banner.css("left", -1 * index * 800 + "px");
+                    spans.eq(index).siblings().removeClass("cur");
+                    spans.eq(index).addClass("cur");
+                    index++;
+                }
+
+                var T = setInterval(run, 1000);
+                banner.mousemove(function () {
+                    clearInterval(T);
+                });
+                banner.mouseout(function () {
+                    T = setInterval(run, 1000);
+                });
+                spans.click(function () {
+                    clearInterval(T);
+                    index = $(this).index();
+                    run();
+                });
+
+            </script>
+        </div>
+    </div>
+    <div class="content-right">
+        <h4>用户登录</h4>
+        <form>
+            用户名：<input type="text" placeholder="请输入用户名" class="user"><br>
+            密码：<input type="password" placeholder="请输入密码" class="pass">
+            <button type="submit" value="登录" class="sub" onclick=change()>登录</button>
+            <button type="reset" value="登录" class="res">重置</button>
+        </form>
+        <p>没有账号？<a href="">去注册</a></p>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="copy">©AUI 京ICP备15006025号-1 <a href="index.html"><font color="#ffffff">编辑者：杨爱媛</font></a>
+        </div>
+        <div class="copy">
+            Copyright © 2019-2019 <span>地址：玉林师范学院东校区</span>
+        </div>
+    </div>
+</div>
+</body>
+</body>
+</html>
+<script type="text/javascript">
+    function change(){
+        alert("暂无此功能.");
+    }
+</script>

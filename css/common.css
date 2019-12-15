@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: #64676e;
+    display: inline-block;
+}
+
+.logo {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: top;
+}
+
+.nav {
+    width: 500px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+}
+
+.nav ul {
+    display: inline-block;
+    width: 100%;
+
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: inline-block;
+    width: 100px;
+    font-size: 16px;
+    color: #4d99fd;
+    background: #DBDBDB;
+    text-align: center;
+}
+
+.nav ul li a:hover {
+    background: #111111;
+    color: white;
+
+}
+
+.search {
+    width: 300px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.search .a {
+    width: 150px;
+    height: 30px;
+    margin-top: 28px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #DBDBDB;
+    outline: none;
+
+}
+
+.search .ab {
+    width: 50px;
+    height: 30px;
+    margin-top: 28px;
+    border-radius: 20px;
+    background: #248CD6;
+    outline: none;
+}
+
+.search .ab:hover {
+    background: #35c748;
+}
+
+.login {
+    float: right;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 100px;
+    font-size: 16px;
+    color: #248CD6;
+}
+
+
+#footer {
+    margin-top: 30px;
+    background: #0a0a0a;
+}
+
+#footer .right {
+    float: none;
+    text-align: center;
+}
+
+#footer .right a {
+    margin: 0 5px;
+    line-height: 1.8;
+    font-size: 12px;
+    color: #64676e;
+}
+
+#footer .right a:hover {
+    color: #fff;
+}
+
+#footer .copy {
+    margin: 0 5px;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 12px;
+    color: #f6f5f5;
+    font-weight: 200
+}
+
+#footer .copy span {
+    display: block;
+}

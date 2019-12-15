@@ -1,0 +1,110 @@
+
+.content {
+    width: 100%;
+    height: auto;
+    background: black;
+    display: inline-block;
+
+}
+
+.content .container {
+    width: 80%;
+    margin: 30px auto;
+    background: #DBDBDB;
+}
+
+.mail-grids {
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.mail-grid-left {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+
+}
+
+.contact-form {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.contact-info h3 {
+    color: #6E6E6E;
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Dorsa-Regular';
+    letter-spacing: 30px;
+}
+
+.contact-info p {
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.mail-grid-left h3 {
+    color: #6E6E6E;
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Dorsa-Regular';
+    letter-spacing: 5px;
+}
+
+.mail-grid-left h5 {
+    color: #919191;
+    font-size: 16px;
+    margin: 0;
+    line-height: 32px;
+}
+
+.mail-grid-left p {
+    color: #919191;
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 30px;
+}
+.contact-form input[type="text"] {
+    width: 100%;
+    color: #919191;
+    background: none;
+    outline: none;
+    font-size:16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid 1px #919191;
+    -webkit-appearance: none;
+}
+.contact-form textarea {
+    resize: none;
+    width: 100%;
+    background: none;
+    color: #919191;
+    font-size: 16px;
+    outline: none;
+    padding: 10px;
+    border: solid 1px #919191;
+    min-height: 150px;
+    -webkit-appearance: none;
+}
+.contact-form input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #292929;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+    -webkit-appearance: none;
+    background: #ffcc33;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    float: right;
+}
